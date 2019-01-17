@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "build": "rm -rf ./dist; tsc --sourcemap --module commonjs src/*.ts --outDir ./dist/",
+        "start": "npm run build; ndb ./dist/index.js"
+    },
+    "dependencies": {
+        "typescript": "3.2.2"
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "ndb": "^1.0.42"
+    }
+}
